@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ language }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        {% for lang, data in languages %}
+          <li><a href="{{ data.url }}">{{ data.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    {{ content | safe }}
+  </main>
+
+  <footer>
+    <p>My Multilingual Blog</p>
+  </footer>
+</body>
+</html>
