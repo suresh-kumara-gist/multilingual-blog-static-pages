@@ -1,11 +1,11 @@
 module.exports = function(eleventyConfig) {
     // Add collections for posts in each language
     eleventyConfig.addCollection("en", function(collectionApi) {
-      return collectionApi.getFilteredByGlob("src/posts/en/*.md");
+      return collectionApi.getFilteredByGlob("src/posts/en/*.njk");
     });
   
     eleventyConfig.addCollection("fr", function(collectionApi) {
-      return collectionApi.getFilteredByGlob("src/posts/fr/*.md");
+      return collectionApi.getFilteredByGlob("src/posts/fr/*.njk");
     });
   
     // Set global data for languages
