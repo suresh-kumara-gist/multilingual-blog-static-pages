@@ -1,0 +1,18 @@
+<header>
+  <div class="logo">
+    <a href="{{ '/en/' | url }}">
+      <img src="/images/logo.png" alt="My Blog Logo">
+    </a>
+  </div>
+  
+  <nav>
+    <ul>
+      <!-- Loop through languages from the global data file and create navigation links -->
+      {% for lang, data in languages %}
+        <li>
+          <a href="{{ data.url }}">{{ data.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>
