@@ -3,7 +3,7 @@ backend:
   repo: suresh-kumara-gist/multilingual-blog-static-pages
   branch: main
   base_url: https://suresh-issue-82.dcycleproject.org
-  auth_endpoint: /auth/github/repo/69556fb8a1e4c918b851f703
+  auth_endpoint: /auth/github/repo/6955740edf31b27a0c78326f
 media_folder: static/uploads
 public_folder: /uploads
 collections:
